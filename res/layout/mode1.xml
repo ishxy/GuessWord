@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:padding="10dp"
+              android:background="@color/light_grey">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+    android:paddingTop="30dp">
+        <TextView
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="单词:"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+
+        />
+        <TextView
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:id="@+id/mode1_word"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingRight="15dp"
+                android:layout_weight="5"
+                android:text=""
+                android:background="@color/white"
+        />
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:layout_marginTop="50dp">
+        <TextView
+                android:textColor="@color/black"
+                android:layout_width="0dp"
+                android:textSize="16dp"
+                android:layout_height="40dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingRight="15dp"
+                android:layout_weight="1"
+                android:text="猜:"
+        />
+        <EditText
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:id="@+id/mode1_guess"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_weight="5"
+                android:text=""
+                android:background="@color/white"
+                android:maxLength="1"
+        />
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:layout_marginTop="50dp">
+
+
+        <Button android:layout_width="0dp" android:layout_height="wrap_content"
+                android:text="正确答案"
+                android:background="@drawable/details_button_selector"
+                android:id="@+id/mode1_true"
+                android:layout_weight="3"
+                android:layout_marginRight="50dp"
+        />
+        <Button android:layout_width="0dp" android:layout_height="wrap_content"
+                android:text="提交"
+                android:layout_weight="1"
+                android:background="@drawable/details_button_selector"
+                android:id="@+id/mode1_up"
+
+        />
+
+    </LinearLayout>
+    
+    
+</LinearLayout>
